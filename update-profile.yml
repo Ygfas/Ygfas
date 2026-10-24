@@ -2,38 +2,21 @@ name: 🌸 Update Profile README
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Daily at 06:00 UTC
-  workflow_dispatch:      # Manual trigger
+    - cron: '0 6 * * *'  # Berjalan otomatis tiap jam 06:00 UTC
+  workflow_dispatch:      # Tombol pemicu manual
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
-    name: Update README with dynamic content
+  generate-snake:
+    name: Generate Snake Animation
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout profile repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          repository: Ygfas/Ygfas
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
-      - name: Generate dynamic stats
-        run: |
-          # This step can be expanded to fetch:
-          # - Latest blog posts (RSS)
-          # - YouTube videos
-          # - Wakatime stats
-          # - Spotify recently played
-          echo "Generating dynamic content..."
-
-      - name: Update README with snake animation
+      - name: Generate contribution snake SVG
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Ygfas
@@ -41,26 +24,20 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Commit & Push changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          if ! git diff --quiet; then
-            git add -A
-            git commit -m "🌸 Auto-update profile README $(date '+%Y-%m-%d')"
-            git push
-          else
-            echo "No changes to commit"
-          fi
+      - name: Push snake SVG to output branch
+        uses: CrazyMax/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  update-stats:
+  refresh-stats:
     name: Refresh GitHub Stats Cache
     runs-on: ubuntu-latest
     steps:
-      - name: Trigger stats refresh
+      - name: Ping stats cache
         run: |
-          # Ping stats services to refresh cache
           curl -s "https://github-readme-stats.vercel.app/api?username=Ygfas" > /dev/null
           curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=Ygfas" > /dev/null
           curl -s "https://github-readme-streak-stats.herokuapp.com/?user=Ygfas" > /dev/null
