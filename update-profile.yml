@@ -1,0 +1,68 @@
+name: 🌸 Update Profile README
+
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 06:00 UTC
+  workflow_dispatch:      # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    name: Update README with dynamic content
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repo
+        uses: actions/checkout@v4
+        with:
+          repository: Ygfas/Ygfas
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Generate dynamic stats
+        run: |
+          # This step can be expanded to fetch:
+          # - Latest blog posts (RSS)
+          # - YouTube videos
+          # - Wakatime stats
+          # - Spotify recently played
+          echo "Generating dynamic content..."
+
+      - name: Update README with snake animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Ygfas
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: Commit & Push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          if ! git diff --quiet; then
+            git add -A
+            git commit -m "🌸 Auto-update profile README $(date '+%Y-%m-%d')"
+            git push
+          else
+            echo "No changes to commit"
+          fi
+
+  update-stats:
+    name: Refresh GitHub Stats Cache
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger stats refresh
+        run: |
+          # Ping stats services to refresh cache
+          curl -s "https://github-readme-stats.vercel.app/api?username=Ygfas" > /dev/null
+          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=Ygfas" > /dev/null
+          curl -s "https://github-readme-streak-stats.herokuapp.com/?user=Ygfas" > /dev/null
+          echo "Stats cache refreshed"
