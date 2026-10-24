@@ -2,8 +2,8 @@ name: 🌸 Update Profile README
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Berjalan otomatis tiap jam 06:00 UTC
-  workflow_dispatch:      # Tombol pemicu manual
+    - cron: '0 6 * * *'  # Berjalan otomatis setiap jam 06:00 UTC
+  workflow_dispatch:      # Pemicu manual
 
 permissions:
   contents: write
