@@ -1,0 +1,62 @@
+<svg width="100%" viewBox="0 0 920 160" xmlns="http://www.w3.org/2000/svg" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <pattern id="foot-dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="7" cy="7" r="1.3" fill="#000" opacity="0.10"/>
+    </pattern>
+  </defs>
+
+  <rect width="920" height="160" fill="#FFFDF5"/>
+  <rect width="920" height="160" fill="url(#foot-dots)"/>
+
+  <!-- Speed lines -->
+  <g stroke="#000" stroke-width="2" opacity="0.06">
+    <line x1="0" y1="160" x2="220" y2="0"/>
+    <line x1="120" y1="160" x2="340" y2="0"/>
+    <line x1="680" y1="160" x2="900" y2="0"/>
+    <line x1="780" y1="160" x2="1000" y2="0"/>
+  </g>
+
+  <!-- Outer Shadow -->
+  <rect x="26" y="24" width="868" height="108" fill="#000"/>
+  <!-- Main Foot Block (Black Body with Neon Rims) -->
+  <rect x="20" y="18" width="868" height="108" fill="#000" stroke="#000" stroke-width="4"/>
+
+  <!-- Corner neo tabs -->
+  <rect x="12" y="10" width="16" height="16" fill="#FF2A85" stroke="#000" stroke-width="2"/>
+  <rect x="880" y="10" width="16" height="16" fill="#FFE600" stroke="#000" stroke-width="2"/>
+  <rect x="12" y="122" width="16" height="16" fill="#00F5A0" stroke="#000" stroke-width="2"/>
+  <rect x="880" y="122" width="16" height="16" fill="#4D96FF" stroke="#000" stroke-width="2"/>
+
+  <!-- Top Ribbon inside banner -->
+  <g transform="translate(45, 42)">
+    <circle cx="0" cy="10" r="5" fill="#00F5A0" stroke="#000" stroke-width="1.5">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="16" font-size="20" font-weight="900" fill="#FFE600" letter-spacing="3">
+      CRAFTED WITH SOUL &amp; CODE // 魂のプログラミング
+    </text>
+  </g>
+
+  <g transform="translate(45, 80)">
+    <text x="0" y="16" font-family="'Space Mono', monospace" font-size="13" font-weight="700" fill="#FFFDF5" letter-spacing="1.5">
+      NEXT.JS 15 • REACT 19 • TAILWIND • THREE.JS • ANIME SPIRIT
+    </text>
+  </g>
+
+  <!-- Rotating Anime Star on right -->
+  <g transform="translate(830, 72)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="10s" repeatCount="indefinite"/>
+      <polygon points="0,-18 5,-5 18,0 5,5 0,18 -5,5 -18,0 -5,-5" fill="#FF2A85" stroke="#000" stroke-width="2"/>
+      <circle cx="0" cy="0" r="4" fill="#FFE600"/>
+    </g>
+  </g>
+
+  <!-- Year stamp badge -->
+  <g transform="translate(685, 34)">
+    <rect x="0" y="0" width="95" height="26" fill="#FF2A85" stroke="#FFF" stroke-width="1.5"/>
+    <text x="47" y="17" text-anchor="middle" font-family="'Space Mono', monospace" font-size="12" font-weight="900" fill="#FFFDF5" letter-spacing="2">
+      VER 2026
+    </text>
+  </g>
+</svg>
