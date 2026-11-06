@@ -1,22 +1,33 @@
-name: 🌸 Update Profile README
+name: 🌸 Update Profile & Dynamic Assets
 
 on:
   schedule:
-    - cron: '0 6 * * *'  # Berjalan otomatis tiap jam 06:00 UTC
-  workflow_dispatch:      # Tombol pemicu manual
+    - cron: '0 6 * * *'  # Daily at 06:00 UTC
+  workflow_dispatch:      # Manual trigger
 
 permissions:
   contents: write
 
 jobs:
-  generate-snake:
-    name: Generate Snake Animation
+  generate-assets:
+    name: Generate Dynamic Neo-Brutalism Anime Assets
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate contribution snake SVG
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate Dynamic SVGs (Stats, Languages, Activity Radar)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python scripts/generate_assets.py
+
+      - name: Generate Contribution Snake Animation
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: Ygfas
@@ -24,25 +35,14 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Commit & Push snake SVG
+      - name: Commit & Push Updated Assets
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f dist/
+          git add -f assets/ dist/
           if ! git diff --staged --quiet; then
-            git commit -m "🌸 Update snake animation $(date '+%Y-%m-%d')"
+            git commit -m "🌸 Auto-update dynamic anime stats & snake animation $(date '+%Y-%m-%d')"
             git push
           else
             echo "No changes to commit"
           fi
-
-  refresh-stats:
-    name: Refresh GitHub Stats Cache
-    runs-on: ubuntu-latest
-    steps:
-      - name: Ping stats cache
-        run: |
-          curl -s "https://github-readme-stats.vercel.app/api?username=Ygfas" > /dev/null
-          curl -s "https://github-readme-stats.vercel.app/api/top-langs/?username=Ygfas" > /dev/null
-          curl -s "https://github-readme-streak-stats.herokuapp.com/?user=Ygfas" > /dev/null
-          echo "Stats cache refreshed"

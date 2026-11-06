@@ -167,11 +167,15 @@ terminal_command: "Warping with Starship & Zsh"
 
 <div align="center">
 
-<img height="185" src="https://github-readme-stats.vercel.app/api?username=Ygfas&show_icons=true&bg_color=FFFDF5&title_color=000000&text_color=000000&icon_color=FF2A85&border_color=000000&border_radius=0&include_all_commits=true&count_private=true&hide=contribs" alt="GitHub Stats" />
-<img height="185" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ygfas&layout=compact&bg_color=FFFDF5&title_color=000000&text_color=000000&border_color=000000&border_radius=0&langs_count=8" alt="Top Languages" />
+<!-- Custom Dynamic Neo-Brutalism + Anime GitHub Stats -->
+<img src="https://raw.githubusercontent.com/Ygfas/Ygfas/main/assets/github-stats.svg" alt="GitHub Combat Stats" />
+&nbsp;
+<!-- Custom Dynamic Neo-Brutalism + Anime Top Languages -->
+<img src="https://raw.githubusercontent.com/Ygfas/Ygfas/main/assets/top-langs.svg" alt="Top Languages Arsenal" />
 
 <br/><br/>
 
+<!-- Real-time Streak Stats with Neobrutalism Tokyo Night Theme -->
 <img height="185" src="https://streak-stats.demolab.com/?user=Ygfas&background=FFFDF5&border=000000&border_radius=0&stroke=000000&ring=FF2A85&fire=FF2A85&currStreakNum=000000&sideNums=000000&currStreakLabel=000000&sideLabels=000000&dates=000000" alt="Streak Stats" />
 
 </div>
@@ -187,7 +191,8 @@ terminal_command: "Warping with Starship & Zsh"
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Ygfas&bg_color=FFFDF5&color=000000&line=FF2A85&point=000000&area=true&hide_border=false&border=000000&area_color=FFE600" width="100%" alt="Activity Graph" />
+<!-- Custom Dynamic Neo-Brutalism 14-Day Activity Pulse Graph -->
+<img src="https://raw.githubusercontent.com/Ygfas/Ygfas/main/assets/activity-graph.svg" width="100%" alt="Activity Radar Pulse Graph" />
 
 </div>
 

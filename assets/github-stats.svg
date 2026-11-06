@@ -1,0 +1,118 @@
+<svg width="450" height="230" viewBox="0 0 450 230" xmlns="http://www.w3.org/2000/svg" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">
+  <defs>
+    <pattern id="stat-dots" width="10" height="10" patternUnits="userSpaceOnUse">
+      <circle cx="5" cy="5" r="1.1" fill="#000" opacity="0.08"/>
+    </pattern>
+    <style>
+      .blink-led {
+        animation: blink 1.2s infinite;
+      }
+      .shuriken-spin {
+        transform-origin: center;
+        animation: spin 10s linear infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </defs>
+
+  <!-- Hard Shadow -->
+  <rect x="8" y="8" width="434" height="214" fill="#000"/>
+  <!-- Card Base -->
+  <rect x="0" y="0" width="434" height="214" fill="#FFFDF5" stroke="#000" stroke-width="4"/>
+  <rect x="0" y="0" width="434" height="214" fill="url(#stat-dots)"/>
+
+  <!-- Top Accent Bar -->
+  <rect x="0" y="0" width="434" height="38" fill="#FFE600" stroke="#000" stroke-width="3"/>
+  <rect x="0" y="0" width="12" height="38" fill="#FF2A85"/>
+  
+  <text x="24" y="24" font-family="'Space Mono', monospace" font-size="13" font-weight="900" fill="#000" letter-spacing="1.5">
+    ⚡ STATS // 戦闘力ステータス
+  </text>
+  <rect x="330" y="7" width="90" height="24" fill="#000"/>
+  <text x="375" y="23" text-anchor="middle" font-family="'Space Mono', monospace" font-size="11" font-weight="900" fill="#00F5A0" letter-spacing="1">
+    ONLINE
+  </text>
+
+  <!-- Content Rows -->
+  <!-- 1. Total Commits -->
+  <g transform="translate(24, 66)">
+    <rect x="0" y="0" width="22" height="22" fill="#FF2A85" stroke="#000" stroke-width="2"/>
+    <text x="11" y="16" text-anchor="middle" font-size="12" fill="#FFF">🗡️</text>
+    <text x="34" y="16" font-family="'Space Mono', monospace" font-size="13" font-weight="800" fill="#000">
+      Total Commits:
+    </text>
+    <text x="220" y="16" font-family="'Space Mono', monospace" font-size="15" font-weight="900" fill="#FF2A85">
+      104
+    </text>
+  </g>
+
+  <!-- 2. Total Repositories -->
+  <g transform="translate(24, 100)">
+    <rect x="0" y="0" width="22" height="22" fill="#FFE600" stroke="#000" stroke-width="2"/>
+    <text x="11" y="16" text-anchor="middle" font-size="12" fill="#000">📦</text>
+    <text x="34" y="16" font-family="'Space Mono', monospace" font-size="13" font-weight="800" fill="#000">
+      Repositories:
+    </text>
+    <text x="220" y="16" font-family="'Space Mono', monospace" font-size="15" font-weight="900" fill="#000">
+      13
+    </text>
+  </g>
+
+  <!-- 3. Total Stars Earned -->
+  <g transform="translate(24, 134)">
+    <rect x="0" y="0" width="22" height="22" fill="#4D96FF" stroke="#000" stroke-width="2"/>
+    <text x="11" y="16" text-anchor="middle" font-size="12" fill="#FFF">⭐</text>
+    <text x="34" y="16" font-family="'Space Mono', monospace" font-size="13" font-weight="800" fill="#000">
+      Stars Earned:
+    </text>
+    <text x="220" y="16" font-family="'Space Mono', monospace" font-size="15" font-weight="900" fill="#4D96FF">
+      1
+    </text>
+  </g>
+
+  <!-- 4. Followers & Network -->
+  <g transform="translate(24, 168)">
+    <rect x="0" y="0" width="22" height="22" fill="#00F5A0" stroke="#000" stroke-width="2"/>
+    <text x="11" y="16" text-anchor="middle" font-size="12" fill="#000">👥</text>
+    <text x="34" y="16" font-family="'Space Mono', monospace" font-size="13" font-weight="800" fill="#000">
+      Followers:
+    </text>
+    <text x="220" y="16" font-family="'Space Mono', monospace" font-size="15" font-weight="900" fill="#23A094">
+      1
+    </text>
+  </g>
+
+  <!-- Right Side Rank Badge (Neo-Brutalism Anime Stamp) -->
+  <g transform="translate(325, 76)">
+    <rect x="4" y="4" width="88" height="114" fill="#000"/>
+    <rect x="0" y="0" width="88" height="114" fill="#FFDE00" stroke="#000" stroke-width="3"/>
+    
+    <rect x="0" y="0" width="88" height="24" fill="#000"/>
+    <text x="44" y="16" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#FFE600" letter-spacing="1">
+      TIER
+    </text>
+
+    <!-- Rotating Star / Shuriken in background of badge -->
+    <g transform="translate(44, 62)">
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite"/>
+        <polygon points="0,-24 7,-7 24,0 7,7 0,24 -7,7 -24,0 -7,-7" fill="#FF2A85" stroke="#000" stroke-width="1.5"/>
+      </g>
+      <circle cx="0" cy="0" r="22" fill="#FFFDF5" stroke="#000" stroke-width="2"/>
+      <text x="0" y="6" text-anchor="middle" font-family="'Space Mono', monospace" font-size="13" font-weight="900" fill="#000">
+        S-RANK
+      </text>
+    </g>
+
+    <text x="44" y="104" text-anchor="middle" font-family="'Space Mono', monospace" font-size="9" font-weight="900" fill="#000" letter-spacing="1">
+      覚醒 LEVEL
+    </text>
+  </g>
+</svg>
