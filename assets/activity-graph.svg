@@ -33,10 +33,10 @@
   <line x1="50" y1="80" x2="870" y2="80" stroke="#000" stroke-dasharray="4,4" stroke-width="1" opacity="0.2"/>
 
   <!-- Filled Gradient Area -->
-  <path d="M 70.0 170 L 70.0 164.0 L 126.9 164.0 L 183.8 164.0 L 240.8 144.0 L 297.7 164.0 L 354.6 164.0 L 411.5 144.0 L 468.5 144.0 L 525.4 164.0 L 582.3 164.0 L 639.2 154.0 L 696.2 164.0 L 753.1 164.0 L 810.0 164.0 L 810.0 170 Z" fill="url(#neonGlow)"/>
+  <path d="M 70.0 170 L 70.0 164.0 L 126.9 164.0 L 183.8 144.0 L 240.8 164.0 L 297.7 164.0 L 354.6 144.0 L 411.5 144.0 L 468.5 164.0 L 525.4 164.0 L 582.3 154.0 L 639.2 164.0 L 696.2 164.0 L 753.1 164.0 L 810.0 164.0 L 810.0 170 Z" fill="url(#neonGlow)"/>
 
   <!-- Dynamic Line Curve -->
-  <path d="M 70.0 164.0 L 126.9 164.0 L 183.8 164.0 L 240.8 144.0 L 297.7 164.0 L 354.6 164.0 L 411.5 144.0 L 468.5 144.0 L 525.4 164.0 L 582.3 164.0 L 639.2 154.0 L 696.2 164.0 L 753.1 164.0 L 810.0 164.0" fill="none" stroke="#FF2A85" stroke-width="3.5" stroke-linejoin="round"/>
+  <path d="M 70.0 164.0 L 126.9 164.0 L 183.8 144.0 L 240.8 164.0 L 297.7 164.0 L 354.6 144.0 L 411.5 144.0 L 468.5 164.0 L 525.4 164.0 L 582.3 154.0 L 639.2 164.0 L 696.2 164.0 L 753.1 164.0 L 810.0 164.0" fill="none" stroke="#FF2A85" stroke-width="3.5" stroke-linejoin="round"/>
 
   <!-- Column Bars and Day Indicators -->
   
@@ -48,7 +48,7 @@
       </text>
     </g>
     <text x="70.0" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      10-27
+      10-28
     </text>
     <g transform="translate(116.9, 164.0)">
       <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
@@ -58,27 +58,27 @@
       </text>
     </g>
     <text x="126.9" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      10-28
-    </text>
-    <g transform="translate(173.8, 164.0)">
-      <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
-      <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
-      <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
-        0
-      </text>
-    </g>
-    <text x="183.8" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
       10-29
     </text>
-    <g transform="translate(230.8, 144.0)">
+    <g transform="translate(173.8, 144.0)">
       <rect x="0" y="0" width="20" height="26.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
       <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
       <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
         2
       </text>
     </g>
-    <text x="240.8" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
+    <text x="183.8" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
       10-30
+    </text>
+    <g transform="translate(230.8, 164.0)">
+      <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
+      <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
+      <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
+        0
+      </text>
+    </g>
+    <text x="240.8" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
+      10-31
     </text>
     <g transform="translate(287.7, 164.0)">
       <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
@@ -88,17 +88,17 @@
       </text>
     </g>
     <text x="297.7" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      10-31
+      11-01
     </text>
-    <g transform="translate(344.6, 164.0)">
-      <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
+    <g transform="translate(344.6, 144.0)">
+      <rect x="0" y="0" width="20" height="26.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
       <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
       <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
-        0
+        2
       </text>
     </g>
     <text x="354.6" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      11-01
+      11-02
     </text>
     <g transform="translate(401.5, 144.0)">
       <rect x="0" y="0" width="20" height="26.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
@@ -108,17 +108,17 @@
       </text>
     </g>
     <text x="411.5" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      11-02
+      11-03
     </text>
-    <g transform="translate(458.5, 144.0)">
-      <rect x="0" y="0" width="20" height="26.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
+    <g transform="translate(458.5, 164.0)">
+      <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
       <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
       <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
-        2
+        0
       </text>
     </g>
     <text x="468.5" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      11-03
+      11-04
     </text>
     <g transform="translate(515.4, 164.0)">
       <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
@@ -128,27 +128,27 @@
       </text>
     </g>
     <text x="525.4" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      11-04
-    </text>
-    <g transform="translate(572.3, 164.0)">
-      <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
-      <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
-      <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
-        0
-      </text>
-    </g>
-    <text x="582.3" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
       11-05
     </text>
-    <g transform="translate(629.2, 154.0)">
+    <g transform="translate(572.3, 154.0)">
       <rect x="0" y="0" width="20" height="16.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
       <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
       <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
         1
       </text>
     </g>
-    <text x="639.2" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
+    <text x="582.3" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
       11-06
+    </text>
+    <g transform="translate(629.2, 164.0)">
+      <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
+      <rect x="0" y="0" width="20" height="4" fill="#FF2A85"/>
+      <text x="10" y="-8" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="900" fill="#000">
+        0
+      </text>
+    </g>
+    <text x="639.2" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
+      11-07
     </text>
     <g transform="translate(686.2, 164.0)">
       <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
@@ -158,7 +158,7 @@
       </text>
     </g>
     <text x="696.2" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      11-07
+      11-08
     </text>
     <g transform="translate(743.1, 164.0)">
       <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
@@ -168,7 +168,7 @@
       </text>
     </g>
     <text x="753.1" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      11-08
+      11-09
     </text>
     <g transform="translate(800.0, 164.0)">
       <rect x="0" y="0" width="20" height="6.0" fill="#FFE600" stroke="#000" stroke-width="2"/>
@@ -178,6 +178,6 @@
       </text>
     </g>
     <text x="810.0" y="190" text-anchor="middle" font-family="'Space Mono', monospace" font-size="10" font-weight="700" fill="#555">
-      11-09
+      11-10
     </text>
 </svg>
