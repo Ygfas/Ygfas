@@ -27,7 +27,7 @@
   <g transform="translate(24, 60)">
     <rect x="-2" y="-2" width="390" height="18" fill="#000"/>
     <g>
-      <rect x="0.0" y="0" width="196.3" height="14" fill="#FFE600" stroke="#000" stroke-width="1.5"/><rect x="196.3" y="0" width="74.4" height="14" fill="#4D96FF" stroke="#000" stroke-width="1.5"/><rect x="270.7" y="0" width="69.1" height="14" fill="#FF2A85" stroke="#000" stroke-width="1.5"/><rect x="339.8" y="0" width="15.0" height="14" fill="#FF90E8" stroke="#000" stroke-width="1.5"/><rect x="354.8" y="0" width="7.6" height="14" fill="#00F5A0" stroke="#000" stroke-width="1.5"/>
+      <rect x="0.0" y="0" width="200.3" height="14" fill="#FFE600" stroke="#000" stroke-width="1.5"/><rect x="200.3" y="0" width="72.8" height="14" fill="#4D96FF" stroke="#000" stroke-width="1.5"/><rect x="273.2" y="0" width="67.6" height="14" fill="#FF2A85" stroke="#000" stroke-width="1.5"/><rect x="340.8" y="0" width="14.7" height="14" fill="#FF90E8" stroke="#000" stroke-width="1.5"/><rect x="355.5" y="0" width="7.4" height="14" fill="#00F5A0" stroke="#000" stroke-width="1.5"/>
     </g>
   </g>
 
@@ -39,7 +39,7 @@
         JavaScript
       </text>
       <text x="180" y="12" text-anchor="end" font-family="'Space Mono', monospace" font-size="12" font-weight="900" fill="#000">
-        50.9%
+        51.9%
       </text>
     </g>
     <g transform="translate(230, 100)">
@@ -48,7 +48,7 @@
         TypeScript
       </text>
       <text x="180" y="12" text-anchor="end" font-family="'Space Mono', monospace" font-size="12" font-weight="900" fill="#000">
-        19.3%
+        18.9%
       </text>
     </g>
     <g transform="translate(24, 134)">
@@ -57,7 +57,7 @@
         HTML
       </text>
       <text x="180" y="12" text-anchor="end" font-family="'Space Mono', monospace" font-size="12" font-weight="900" fill="#000">
-        17.9%
+        17.5%
       </text>
     </g>
     <g transform="translate(230, 134)">
@@ -66,7 +66,7 @@
         CSS
       </text>
       <text x="180" y="12" text-anchor="end" font-family="'Space Mono', monospace" font-size="12" font-weight="900" fill="#000">
-        3.9%
+        3.8%
       </text>
     </g>
     <g transform="translate(24, 168)">
@@ -75,7 +75,7 @@
         Dart
       </text>
       <text x="180" y="12" text-anchor="end" font-family="'Space Mono', monospace" font-size="12" font-weight="900" fill="#000">
-        2.0%
+        1.9%
       </text>
     </g>
 </svg>
